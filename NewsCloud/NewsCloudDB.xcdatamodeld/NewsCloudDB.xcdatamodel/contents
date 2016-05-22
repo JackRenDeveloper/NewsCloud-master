@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
+    <entity name="AllChannels" representedClassName="AllChannels" syncable="YES">
+        <attribute name="channelId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ChannelData" representedClassName="ChannelData" syncable="YES">
+        <attribute name="channelData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="channelId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MyChannels" representedClassName="MyChannels" syncable="YES">
+        <attribute name="channelId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MyCollection" representedClassName="MyCollection" syncable="YES">
+        <attribute name="channelId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserInfo" representedClassName="UserInfo" syncable="YES">
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userProtrait" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AllChannels" positionX="-45" positionY="0" width="128" height="75"/>
+        <element name="ChannelData" positionX="-27" positionY="36" width="128" height="75"/>
+        <element name="MyChannels" positionX="-18" positionY="45" width="128" height="75"/>
+        <element name="UserInfo" positionX="-27" positionY="36" width="128" height="90"/>
+        <element name="MyCollection" positionX="-27" positionY="45" width="128" height="120"/>
+    </elements>
+</model>

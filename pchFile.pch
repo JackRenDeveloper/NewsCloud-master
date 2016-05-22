@@ -1,0 +1,41 @@
+//
+//  pchFile.pch
+//  MMH
+//
+//  Created by Eric-Mac on 16/4/7.
+//  Copyright © 2016年 JimmyStuido. All rights reserved.
+//
+
+#ifndef pchFile_pch
+#define pchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIColor+RCColor.h"
+#import <MJExtension.h>
+//#import "JLHttpTool.h"
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import <SVProgressHUD.h>
+
+#ifdef DEBUG
+#define JLLog(...) NSLog(__VA_ARGS__)
+#else
+#define JLLog(...)
+#endif
+
+
+#define BACKCOLOR [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]
+#define LINECOLOR [UIColor colorWithRed:227/255.0f green:227/255.0f blue:227/255.0f alpha:1]
+//#define FONTCOLOR [UIColor colorWithHexString:@"FF6A6A" alpha:1.0f]
+#define FONTCOLOR [UIColor colorWithRed:228/255.0f green:87/255.0f blue:71/255.0f alpha:1]
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define PICTURE_HEIGHT (SCREEN_WIDTH * 395) / 720 
+
+//APIStore ApiKey
+#define APISTORE_APIKEY  @"35682eddc7e804478489eeccc09c5ad6"
+
+#endif /* pchFile_pch */
